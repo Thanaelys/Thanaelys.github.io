@@ -17,10 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!--Ceci est l'exercice 2: les colonnes ("col") doivent se trouver dans des "row" qui doivent se trouver dans des "container".md correspond au breakpoint "medium device", en dessus de celui-ci les divs sont affichées côte à côte, en dessous elles sont affichées les unes sur les autres (stacked). 3 correspond au nombre de colonnes utilisées sur les 12 totales de l'écran (donc un quart).-->
+    <!--Ceci est l'exercice 2: les colonnes ("col") doivent se trouver dans des "row" qui doivent se trouver dans des "container".md correspond au breakpoint "medium device", en dessus de celui-ci les divs sont affichées côte à côte, en dessous elles sont affichées les unes sur les autres (stacked). 3 correspond au nombre de colonnes utilisées sur les 12 totales de l'écran (donc un quart) et 4 à deux tiers, et 5 à 5 douxième.-->
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <!--Ceci est l'exercice 4-->
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
@@ -66,9 +66,12 @@
                         <span class="visually-hidden">Suivant</span>
                     </button>
                 </div>
-                <div class="ms-md-5">Cet espace sera utile plus tard pour y raconter les futures avantures de Charlock et Caton.</p></div>
+                <!--Ceci est l'exercice 8: ms-md-5 créé une marge à gauche pour les appareils medium et suppérieurs. En effet, m correspond à margin (et créé donc une marge). s correspond à start, ce qui pose la marge à gauche là où e (end) créé la marge à droite par exemple. md correspond à medium pour dire que le breakpoint est celui des appareils de taille medium ou suppérieur. 5 correspond à la taille de cette marge (ici = $spacer * 3)-->
+                <div class="ms-md-5">
+                    <p>Cet espace sera utile plus tard pour y raconter les futures avantures de Charlock et Catson. Merci <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">SVG Backgrounds and Patterns by SVGBackgrounds.com</a> pour les super backgrounds !</p>
+                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <!--Ceci est l'exercice 3-->
                 <div class="card">
                     <div class="card-body">
@@ -76,15 +79,16 @@
                         <p class="card-text">Grâce à l'enquête de Catson, nous savons désormais qu'Eden est une poule
                             hors du commun et extrêmement sympathique. Elle
                             aime les gratouilles, les câlins, et bien sûr, manger.</p>
-                            <!--Ceci est l'exercice 7-->
-                            <figure class="text-end">
-                                <blockquote class="blockquote">
-                                  <p>"L'enquête touche à sa fin... Nous miavons toutes les miaouformations nécéssaires..."</p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer">
-                                  Charlock Holmes <cite title="Source Title">Une chacrée enquête</cite>
-                                </figcaption>
-                              </figure>
+                        <!--Ceci est l'exercice 7-->
+                        <figure class="text-end">
+                            <blockquote class="blockquote">
+                                <p>"L'enquête touche à sa fin... Nous miavons toutes les miaouformations nécéssaires..."
+                                </p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Charlock Holmes <cite title="Source Title">Une chacrée enquête</cite>
+                            </figcaption>
+                        </figure>
                         <p class="card-text"><small class="text-body-secondary">Elle est adorable non ?</small></p>
                     </div>
                     <img src="Poule.jpg" class="card-img-bottom" alt="Ma poule Eden et moi">
